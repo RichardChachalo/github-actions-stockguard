@@ -1,0 +1,1 @@
+# Este archivo puede estar vacío. Solo sirve para que Python reconozca la carpeta src como un paquete.
