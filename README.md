@@ -88,3 +88,32 @@ El de sintaxis Python (compileall), porque es el más rápido de ejecutar. No ti
 
 10. ¿Qué prueba sería demasiado costosa o frágil para ejecutar en cada push y cómo la validarías entonces?
 Levantar todo el clúster de Kafka + Spark + Airflow en cada push. Sería demasiado costoso en tiempo (minutos de ejecución) y frágil (los contenedores pueden fallar por falta de recursos). Se validaría localmente antes de hacer el release final o mediante una ejecución manual programada (workflow_dispatch) en horarios de baja carga.
+
+
+---
+
+## 📸 Evidencias de Ejecución
+
+A continuación se presentan las capturas de pantalla que evidencian el funcionamiento del flujo de Integración Continua (CI) y el cumplimiento de los objetivos de la práctica.
+
+### 1. Historial de Ejecuciones (Fallos y Correcciones)
+Aquí se evidencia el proceso de aprendizaje: la ejecución fallida por el error de rutas, seguida de las ejecuciones exitosas tras la corrección del YAML.
+
+<img width="1461" height="628" alt="image" src="https://github.com/user-attachments/assets/9bb7cd27-1f0e-4bb8-b947-531416655935" />
+
+
+### 2. Detalle de Pruebas Unitarias Exitosas
+Salida de la terminal en el runner de GitHub Actions, demostrando que las 5 pruebas unitarias (Agotado, Crítico, Bajo, Normal, Inválido) pasaron correctamente.
+
+<img width="1453" height="613" alt="image" src="https://github.com/user-attachments/assets/8825d579-3f07-4df3-ac9c-17d08ab2714a" />
+
+
+### 3. Ejecución Manual (Workflow Dispatch)
+Evidencia de la activación manual del workflow desde la interfaz de GitHub, demostrando el uso del trigger `workflow_dispatch`.
+
+<img width="1424" height="643" alt="image" src="https://github.com/user-attachments/assets/0a939945-128c-4967-8c39-e1935f2f0552" />
+
+
+<img width="1470" height="713" alt="image" src="https://github.com/user-attachments/assets/3e36a6f9-3401-48ba-919e-b441e35b7958" />
+
+
